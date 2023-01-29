@@ -1,8 +1,8 @@
 {
-  "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
-    "deleteOutDir": true
+    "assets": ["mail/templates/**/*"], // 👈e  or "**/*.hbs" all files ending with .hbs
+    "watchAssets": true // 🤖 copy assets in watch mode
   }
 }
